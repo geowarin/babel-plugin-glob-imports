@@ -17,7 +17,7 @@ After:
 ```javascript
 import * as one from './src/subdir/one.js';
 import * as two from './src/subdir/otherdir/two.js';
-const module = {
+const myModule = {
   one: one,
   two: two
 }
