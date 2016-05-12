@@ -42,6 +42,14 @@ test('should throw in case of conflicts', t => {
   );
 });
 
+test('should throw default import is not used', t => {
+  const code = 'import {module} from "./fixtures/oneleve/*.js"';
+  t.throws(
+    attemptToTransform(code),
+    checkError(`Glob imports only works with default import. e.g.: import myModule from "src/*.js"`)
+  );
+});
+
 function attemptToTransform (code) {
   return new Promise(resolve => resolve(transform(code)))
 }
