@@ -29,3 +29,12 @@ This module is a bit opinionated:
 
 * All files resolved by the glob must have unique names
 * You can only use the global import with globs (Forbidden: `import {something} from "./glob/*.js"`)
+
+## DEVELOPMENT STOPPED
+
+I did not continue developing this plugin because its tricky to update the glob.
+Often, you just add files and you would like the glob to automatically list those files, which is not the case.
+You have to delete babel cache or trigger a recompilation of the file where the glob is used.
+
+For those reasons, I do not recommand using the plugin. Unless you can come up with some magic to make it work.
+PRs welcome.
