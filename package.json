@@ -14,6 +14,10 @@
     "pretest": "npm run build",
     "test": "ava"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geowarin/babel-plugin-glob-imports.git"
+  },
   "keywords": [
     "babel-plugin"
   ],
